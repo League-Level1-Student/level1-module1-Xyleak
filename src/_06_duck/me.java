@@ -16,6 +16,6 @@ System.out.println(":]");
 
 
  private void Kono_Dio_Da(){
-System.out.println("Kono-Dio-Da! (IT WAS I!!! DIO!!!!!!");
+System.out.println("Kono-Dio-Da! (IT WAS I, DIO!!!!!!)");
 }
 }
