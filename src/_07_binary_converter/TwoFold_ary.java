@@ -1,5 +1,7 @@
 package _07_binary_converter;
 
+import java.awt.Dimension;
+
 import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
@@ -10,31 +12,45 @@ import javax.swing.JTextField;
 public class TwoFold_ary {
 
 	public static void main(String[] args) {
-		
 	
-	JFrame pic = new JFrame(); {
-	
-JPanel pan = new JPanel();
+	}
+		public void run() {
 		
-JTextField answer = new JTextField(20);
+			JFrame fram = new JFrame();
+		fram.setVisible(true);
+		
+		
+		 
+		JPanel pan = new JPanel();
+		fram.add(pan);
 
-		JButton lever = new JButton();
+
+		JButton button = new JButton();
+		pan.add(button);
+		
+		
+		JTextField text = new JTextField(20);
+		pan.add(text);
+		
 		
 		JLabel name = new JLabel();
+		pan.add(name);
 		
 		
-		pic.add(pan);
-		pic.setVisible(true);
-		pic.add(lever);
-		pic.add(answer);
-		pic.add(name);
-		pic.pack();
+		fram.pack();
 		
-		lever.addActionListener(null);
+		
+		fram.setSize(500,200);
+		fram.setTitle("Bins");
+		button.setText("Convert");
+		
+		
+		button.addActionListener(null);
 	}
-	}	
 		
+	
 		
+	
 		
 		String convert(String input) {
 		if(input.length() !=8) {
@@ -54,11 +70,17 @@ JTextField answer = new JTextField(20);
              JOptionPane.showMessageDialog(null, "Enter a binary, silly!!!");
              return "-";
         }
-   }
+		}
+
+
+
+		
 			
 			
-			
-	
+		}
+
+
+
 		
 		
 		
@@ -66,5 +88,4 @@ JTextField answer = new JTextField(20);
 	
 	
 	
-}
 

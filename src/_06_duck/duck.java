@@ -2,8 +2,8 @@ package _06_duck;
 
 public class duck {
 
-int NumOfFriends = 01134;	
-String Favfood = ("Choco");
+int NumOfFriends;	
+String Favfood;
 	
 duck(String Favfood, int NumOfFriends){
 	this.Favfood = Favfood;

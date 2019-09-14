@@ -10,12 +10,12 @@ this.Uufs = Uufs;
 this.Oofs = Oofs;
 }
 
-public void Knee() {
+void Knee() {
 System.out.println(":]");
 }
 
 
- private void Kono_Dio_Da(){
+void Kono_Dio_Da(){
 System.out.println("Kono-Dio-Da! (IT WAS I, DIO!!!!!!)");
 }
 }
