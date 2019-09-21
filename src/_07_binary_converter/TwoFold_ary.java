@@ -1,6 +1,7 @@
 package _07_binary_converter;
 
 import java.awt.Dimension;
+import java.awt.event.ActionEvent;
 
 import javax.swing.JButton;
 import javax.swing.JFrame;
@@ -14,8 +15,12 @@ public class TwoFold_ary {
 	public static void main(String[] args) {
 	
 	}
-		public void run() {
+	
+	
 		
+		public void run() {
+			
+			
 			JFrame fram = new JFrame();
 		fram.setVisible(true);
 		
@@ -24,13 +29,18 @@ public class TwoFold_ary {
 		JPanel pan = new JPanel();
 		fram.add(pan);
 
+		
 
-		JButton button = new JButton();
-		pan.add(button);
+
+		
 		
 		
 		JTextField text = new JTextField(20);
 		pan.add(text);
+		
+		
+			JButton button = new JButton();
+			pan.add(button);
 		
 		
 		JLabel name = new JLabel();
@@ -40,8 +50,8 @@ public class TwoFold_ary {
 		fram.pack();
 		
 		
-		fram.setSize(500,200);
-		fram.setTitle("Bins");
+		fram.setSize(450,70);
+		fram.setTitle("🐸🐸🐸EPIC GAMES🐸🐸🐸");
 		button.setText("Convert");
 		
 		
@@ -52,16 +62,20 @@ public class TwoFold_ary {
 		
 	
 		
+		
+		
 		String convert(String input) {
 		if(input.length() !=8) {
 			JOptionPane.showMessageDialog(null,  "Enter 8 bits, silly!!!!");
 			return "-" ;
 		}
+		
         String binary = "[0-1]+";    //must contain numbers in the given range
         if (!input.matches(binary)) {
              JOptionPane.showMessageDialog(null, "Binary can only contain 1s or 0s, silly!!!");
              return "-";
         }
+		
         try {
              int asciiValue = Integer.parseInt(input, 2);
              char theLetter = (char) asciiValue;
@@ -71,13 +85,20 @@ public class TwoFold_ary {
              return "-";
         }
 		}
-
-
-
 		
-			
-			
+		public void actionPerformed(ActionEvent button){ 
+			JButton buttonPressed = (JButton) button.getSource();
+			if(buttonPressed == button) {
+		showUWU();	
 		}
+		}
+void showUWU() { JOptionPane.showMessageDialog(null, "Binary is robot food.");
+
+}
+		}
+
+			
+		
 
 
 
