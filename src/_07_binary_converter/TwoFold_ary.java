@@ -88,10 +88,10 @@ public class TwoFold_ary {
 		
 		public void actionPerformed(ActionEvent button){ 
 			JButton buttonPressed = (JButton) button.getSource();
-			if(buttonPressed == button) {
+			
 		showUWU();	
 		}
-		}
+		
 void showUWU() { JOptionPane.showMessageDialog(null, "Binary is robot food.");
 
 }
